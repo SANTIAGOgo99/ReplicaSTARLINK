@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iniciar Sesión - Starlink</title>
   <style>
+  
     body {
       font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #ffffff;
+      background-color: #121212; 
+      color: #ffffff; 
       margin: 0;
       display: flex;
       justify-content: center;
@@ -17,15 +18,15 @@
       flex-direction: column;
     }
 
+    
     .header {
       width: 100%;
-      max-width: 400px;
+      max-width: 400px; 
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 10px 15px;
       box-sizing: border-box;
-      border-bottom: 1px solid #ffffff;
     }
 
     .header .logo {
@@ -36,79 +37,90 @@
     .header .menu {
       width: 25px;
       height: 25px;
-      background-color: #ffffff; /* Reemplazar con un ícono */
-      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
     }
 
+    .menu-icon {
+      width: 20px;
+      height: 20px;
+      background-color: #ffffff; 
+      border-radius: 2px;
+    }
+
+   
     .container {
       text-align: center;
       width: 100%;
-      max-width: 400px;
+      max-width: 400px; 
       padding: 20px;
     }
 
     h1 {
-      font-size: 24px;
+      font-size: 20px; 
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 20px; 
     }
 
+    
     form {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 15px; 
     }
 
     input[type="email"],
     input[type="password"] {
-      background-color: #1e1e1e;
-      color: #ffffff;
+      background-color: #1e1e1e; 
+      color: #ffffff; 
       border: 1px solid #ffffff;
-      border-radius: 5px;
+      border-radius: 5px; 
       padding: 10px;
-      font-size: 16px;
+      font-size: 14px;
     }
 
     input[type="submit"] {
-      background-color: #ffffff;
-      color: #121212;
+      background-color: #ffffff; 
+      color: #121212; 
       border: none;
-      border-radius: 5px;
+      border-radius: 5px; 
       padding: 10px;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: bold;
       cursor: pointer;
     }
 
     input[type="submit"]:hover {
-      background-color: #e0e0e0;
+      background-color: #e0e0e0; 
     }
-
     .links {
       margin-top: 15px;
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 10px; 
     }
 
     .links a {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 14px;
+      color: #ffffff; 
+      text-decoration: none; 
+      font-size: 12px;
     }
 
     .links a:hover {
-      text-decoration: underline;
+      text-decoration: underline; 
     }
   </style>
 </head>
 <body>
-  <!-- Encabezado -->
   <div class="header">
     <div class="logo">STARLINK</div>
-    <div class="menu"></div> 
+    <div class="menu">
+      <div class="menu-icon"></div>
+    </div>
+  </div>
 
-  <!-- Contenido principal -->
   <div class="container">
     <h1>INICIAR SESIÓN</h1>
     <form>
@@ -118,7 +130,7 @@
     </form>
     <div class="links">
       <a href="#">¿Olvidó su contraseña?</a>
-      <a href="#">Don't have Starlink yet? Order here.</a>
+      <a href="#">¿Aún no tiene Starlink? Ordénelo aquí.</a>
       <a href="#">¿Tiene un Starlink pero sin cuenta? Actívelo aquí.</a>
     </div>
   </div>
